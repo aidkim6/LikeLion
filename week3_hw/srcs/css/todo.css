@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #92CAFF;
+}
+
+.wrap {
+    width: 600px;
+    margin: 100px auto;
+}
+
+
+header h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.add {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 15px 20px;
+}
+
+.add input {
+    flex: 1;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.add button {
+    background: none;
+    border: none;
+}
+
+
+main {
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #92CAFF;
+}
+
+.leftBox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.checkBox {
+    width: 15px;
+    height: 15px;
+}
+
+.todoText {
+    font-size: 15px;
+    color: black;
+}
+
+.removeBtn {
+    background: none;
+    border: none;
+}
+
+.removeBtn img {
+    width: 15px;
+    height: 15px;
+}

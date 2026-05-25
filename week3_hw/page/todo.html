@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../srcs/css/todo.css">
+    <title>TO-DO LIST</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1>TO-DO LIST</h1>
+            <div class="add">
+                <input type="text" placeholder="오늘 할 일을 입력해주세요!" class="addvalue" id="Input_Todo">
+                <button id="addbtn"><img src="../srcs/img/Vector.png" alt="add list"></button>
+            </div>
+        </header>
+        <main id="main"></main>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=>{
+            const inputTodo = document.getElementById('Input_Todo');
+            const addBtn = document.getElementById('addbtn');
+            const main = document.getElementById('main');
+
+            let index = 1;
+
+            addBtn.addEventListener('click', ()=>{
+                if (inputTodo.value.trim()===''){
+                    alert('내용을 입력해 주세요');
+                    return;
+                }
+                console.log(inputTodo.value)
+            const list = document.createElement('div');
+            list.classList.add('list');
+
+            const leftBox = document.createElement('div');
+            leftBox.classList.add('leftBox');
+
+            const checkBox = document.createElement('input');
+            checkBox.type = 'checkBox'
+            checkBox.id = `check${index}`;
+            checkBox.classList.add('checkBox');
+
+            const text = document.createElement('p');
+            text.textContent=inputTodo.value;
+            text.classList.add('todoText');
+
+            const removeBtn = document.createElement('button');
+            removeBtn.innerHTML = '<img src="../srcs/img/x.png" alt="deletebtn">';
+            removeBtn.classList.add('removeBtn');
+            checkBox.addEventListener('change', () =>{
+                if(checkBox.checked){
+                    text.style.textDecoration='line-through';
+                } else{
+                    text.style.textDecoration ='none'
+                }
+            });
+
+            //삭제버튼 누르면 해당 할 일이 화면에서 제거되는 코드 적기
+            removeBtn.addEventListener('click', () => {
+                list.remove();
+            });
+
+            leftBox.appendChild(checkBox);
+            leftBox.appendChild(text);
+
+            list.appendChild(leftBox);
+            list.appendChild(removeBtn);
+
+            main.appendChild(list);
+
+            inputTodo.value='';
+
+            index++;
+
+
+
+
+            
+            })
+        })
+    </script>
+</body>
+</html>

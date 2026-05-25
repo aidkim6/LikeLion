@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'NanumSquareNeo-Variable';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #92CAFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+/* 시작 화면 박스 */
+#Button_Wrap {
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    border: solid 6px #92CAFF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #49A1F1;
+        }
+    }
+}
+
+/* 글쓰기 화면 */
+#Write_Wrap {
+    width: 1000px;
+    height: 800px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    input.title, textarea.content {
+        width: 100%;
+        border: 3px solid #49A1F1;
+        font-size: 20px;
+        padding: 20px 30px;
+        border-radius: 10px;
+        outline: none;
+        &::placeholder {
+            color: #49A1F1;
+            font-weight: bold;
+        }
+    }
+
+    textarea.content {
+        height: 450px;
+        resize: none;
+    }
+
+    .button_group {
+        display: flex;
+        justify-content: space-between;
+        
+        button {
+            width: 250px;
+            height: 65px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .delete {
+            border: solid 4px #49A1F1;
+            background-color: #fff;
+            color: #49A1F1;
+        }
+        .write {
+            background-color: #49A1F1;
+            color: #fff;
+        }
+    }
+}
+
+/* 결과 화면(Article) */
+#Article_Wrap {
+    width: 1000px;
+    height: 800px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .article {
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            font-size: 32px;
+            color: #49A1F1;
+            border-bottom: 4px solid #49A1F1;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .content_text{
+            flex: 1;
+        }
+        p {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #49A1F1;
+        }
+        .comment_list {
+            margin-top: 20px;
+            color: #49A1F1;
+            font-weight: bold;
+        }
+    }
+
+    .icon_group {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+        padding-bottom: 20px;
+        border-bottom: solid 4px #49A1F1;
+        font-size: 24px;
+        font-weight: bold;
+        color: #49A1F1;
+        img { width: 30px; }
+    }
+
+    footer {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+        input {
+            flex: 1;
+            border: 3px solid #92CAFF;
+            border-radius: 10px;
+            padding: 15px;
+            outline: none;
+        }
+        button {
+            width: 100px;
+            background-color: #92CAFF;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+}

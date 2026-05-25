@@ -1,0 +1,29 @@
+$login-color: green;
+$logout-color: red;
+
+.home{
+    padding: 30px;
+    text-align: center;
+
+    .home-title{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .home-btn{
+        border: none;
+        padding: 12px 20px;
+        border-radius: 10px;
+        color: wheat;
+        cursor: pointer;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .login{
+        background-color: $login-color;
+    }
+    .logout{
+        background-color: $logout-color;
+    }
+}

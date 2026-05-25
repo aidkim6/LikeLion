@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #92CAFF;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrap {
+    width: 600px;
+    margin-top: 100px;
+
+    header {
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .add {
+            display: flex;
+            align-items: center;
+            background-color: #FFFFFF;
+            padding: 15px 20px;
+
+            input {
+                flex: 1;
+                border: none;
+                font-size: 16px;
+                outline: none;
+            }
+
+            button {
+                background: none;
+                border: none;
+                cursor: pointer;
+                img { width: 20px; }
+            }
+        }
+    }
+
+    main {
+        background-color: #FFFFFF;
+        margin-top: 20px;
+        padding: 10px 20px;
+
+
+        .list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #92CAFF;
+
+            .leftBox {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                .checkBox {
+                    width: 17px;
+                    height: 17px;
+                    cursor: pointer;
+                }
+
+                .todoText {
+                    font-size: 16px;
+                    color: black;
+                }
+            }
+
+            .removeBtn {
+                background: none;
+                border: none;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+}
