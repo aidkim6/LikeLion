@@ -1,6 +1,6 @@
 import React from 'react';
 
-// 이미지 import (경로는 본인의 폴더 구조에 맞게 꼭 확인해 주세요!)
+
 import Insta01 from '../../assets/img/Section04_1.png';
 import Insta02 from '../../assets/img/Section04_2.png';
 import Insta03 from '../../assets/img/Section04_3.png';
@@ -32,7 +32,6 @@ const Section03 = () => {
         <div className="Insta_id">@fila_korea</div>
       </div>
 
-      {/* 5x2 바둑판 이미지 영역 */}
       <div className="Insta_grid_container">
         {INSTA_DATA.map(({ id, img }) => (
           <div key={id} className="Insta_card">

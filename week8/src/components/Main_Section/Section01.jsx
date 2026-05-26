@@ -33,8 +33,7 @@ const Section01 = () => {
     <section className="Product_section">
       <h2 className="Section_title">지금 많이 찾는 상품</h2>
 
-      {/* 탭 메뉴 영역 */}
-      <ul className="Tab_menu">
+    <ul className="Tab_menu">
         {DATA.map((tab) => (
           <li
             key={tab.id}
@@ -46,7 +45,7 @@ const Section01 = () => {
         ))}
       </ul>
 
-      {/* 상품 리스트 가로 스크롤 영역 */}
+
       <div className="Product_container">
         <div className="Product_list">
           {PRODUCT_DATA.map((product) => (
