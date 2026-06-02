@@ -1,0 +1,145 @@
+
+.asset_wrap {
+    justify-content: flex-start !important;
+    overflow-y: auto;
+    padding-top: 25px !important;
+    padding-bottom: 90px !important;
+}
+.asset_wrap::-webkit-scrollbar { display: none; }
+
+
+.asset_header {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.asset_main_title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+}
+.close_btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+}
+.close_btn img {
+    width: 24px;
+    height: 24px;
+}
+
+
+.total_asset_box {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.asset_sub_label {
+    font-size: 14px;
+    color: #999999;
+    margin-bottom: 8px;
+}
+.amount_row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.total_amount {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #000000;
+}
+.profit_badge {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #5A9E6E; 
+}
+.arrow_icon {
+    width: 30px;
+    height: auto;
+}
+
+
+.section_title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+
+.current_plan_section {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.gold_card_box {
+    width: 100%;
+}
+.gold_plan_img {
+    width: 100%; 
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.see_all_plans_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.see_all_plans_btn {
+    font-size: 15px;
+    color: #FE555D; 
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.history_section {
+    width: 100%;
+}
+.history_list {
+    display: flex;
+    flex-direction: column;
+}
+.history_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ECECEC;
+}
+.history_info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.history_price {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.text_black { color: #000000; }
+.text_green { color: #5A9E6E; }
+
+.history_desc {
+    font-size: 14px;
+    color: #999999;
+}
+.history_date {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: #999999;
+    white-space: nowrap;
+}

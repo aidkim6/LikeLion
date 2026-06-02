@@ -1,0 +1,27 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+  --mainfont: "Pretendard-Regular";
+  --subfont: 'Lora';
+
+  --black: #141414;
+  --white: #fff;
+  --main: #6AA2F5;
+  --shadow: #82B3E1;
+
+
+  color: var(--black); /*메인에 초록색값 주면 초록값 먹음 */
+  font-family: var(--mainfont);
+  font-size: 16px;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}

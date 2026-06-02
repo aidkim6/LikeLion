@@ -1,0 +1,36 @@
+
+
+button,
+a {
+    cursor: pointer;
+    background-color: var(--none);
+}
+
+body {
+    background-color: #404040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 414px;
+    height: 932px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.none {
+    display: none !important;
+}
+
+input {
+    outline: none;
+}

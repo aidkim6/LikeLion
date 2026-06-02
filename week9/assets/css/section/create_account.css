@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #F5F5F5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#wrap {
+    width: 414px;
+    height: 932px;
+    background-color: #FFFFFF; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 50px 30px; 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); 
+}
+
+
+.create_header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; 
+    margin-top: 20px;
+}
+
+.back_btn {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.back_btn .back_img {
+    width: 6px;   
+    height: 12px; 
+    display: block;
+}
+
+.create_main {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: auto; 
+}
+
+.title_group {
+    margin-bottom: 60px; 
+}
+
+.create_title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.create_sub {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #4F4F4F;
+}
+
+
+.register_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.form_input {
+    width: 100%;
+    padding: 22px 26px; 
+    border: 1px solid #BEC2C6; 
+    border-radius: 20px; 
+    font-size: 17px;
+    color: #000000;
+    outline: none; 
+}
+
+.form_input::placeholder {
+    color: #9A9A9A;
+}
+
+footer {
+    width: 100%;
+}
+
+.btn_group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+.create_btn {
+    display: block; 
+    width: 100%;    
+    background-color: #5A9E6E; 
+    color: #FFFFFF; 
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    padding: 18px 0; 
+    border-radius: 20px; 
+    text-decoration: none; 
+    border: none;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.already_btn {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    color: #5A9E6E;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 10px;
+}
