@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open Fashion | Blog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.0/NanumSquareNeo.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <button class="icon-btn" id="menuOpenBtn" aria-label="menu">
+      <img src="../assets/src/img/Menu (2).png" alt="menu" class="icon-img">
+    </button>
+    <a href="index.html"><img src="../assets/src/img/Logo.svg" alt="Open Fashion" class="logo-img"></a>
+    <div class="header-icons">
+      <button class="icon-btn" id="searchOpenBtn" aria-label="search">
+        <img src="../assets/src/img/Search.svg" alt="search" class="icon-img">
+      </button>
+      <button class="icon-btn" aria-label="cart">
+        <img src="../assets/src/img/shopping bag.svg" alt="cart" class="icon-img">
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Blog Title ===== -->
+  <section class="blog-title-section">
+    <h2 class="blog-title">BLOG</h2>
+    <div class="section-divider"></div>
+  </section>
+
+  <!-- ===== Category Tabs ===== -->
+  <nav class="blog-tabs">
+    <button class="tab active">Fashion</button>
+    <button class="tab">Prom</button>
+    <button class="tab">Policy</button>
+    <button class="tab">Lookbook</button>
+    <button class="tab">Sale</button>
+  </nav>
+
+  <!-- ===== Blog Card List ===== -->
+  <section class="blog-list">
+
+    <article class="blog-card">
+      <img src="../assets/src/img/Group 267 (1).png" alt="2021 Style Guide: The Biggest Fall Trends" class="blog-card-img">
+      <div class="blog-meta">
+        <div class="blog-tags">
+          <span class="blog-tag">#Fashion</span>
+          <span class="blog-tag">#Tips</span>
+        </div>
+        <span class="blog-date">4 days ago</span>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="../assets/src/img/Group 266.png" alt="2021 Style Guide: The Biggest Fall Trends" class="blog-card-img">
+      <div class="blog-meta">
+        <div class="blog-tags">
+          <span class="blog-tag">#Fashion</span>
+          <span class="blog-tag">#Tips</span>
+        </div>
+        <span class="blog-date">4 days ago</span>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="../assets/src/img/Group 266 (1).png" alt="2021 Style Guide: The Biggest Fall Trends" class="blog-card-img">
+      <div class="blog-meta">
+        <div class="blog-tags">
+          <span class="blog-tag">#Fashion</span>
+          <span class="blog-tag">#Tips</span>
+        </div>
+        <span class="blog-date">4 days ago</span>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="../assets/src/img/Group 266 (2).png" alt="2021 Style Guide: The Biggest Fall Trends" class="blog-card-img">
+      <div class="blog-meta">
+        <div class="blog-tags">
+          <span class="blog-tag">#Fashion</span>
+          <span class="blog-tag">#Tips</span>
+        </div>
+        <span class="blog-date">4 days ago</span>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ===== Load More ===== -->
+  <div class="load-more-wrap">
+    <button class="load-more-btn">
+      LOAD MORE
+      <span class="load-more-plus">+</span>
+    </button>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="sns-row">
+      <a href="#" aria-label="twitter"><img src="../assets/src/img/Twitter.svg" alt="twitter"></a>
+      <a href="#" aria-label="instagram"><img src="../assets/src/img/Instagram.svg" alt="instagram"></a>
+      <a href="#" aria-label="youtube"><img src="../assets/src/img/YouTube (1).svg" alt="youtube"></a>
+    </div>
+
+    <div class="footer-divider">
+      <img src="../assets/src/img/5.png" alt="">
+    </div>
+
+    <p class="footer-contact">
+      support@openui.design<br>
+      +60 825 876<br>
+      08:00 - 22:00 - Everyday
+    </p>
+
+    <div class="footer-divider">
+      <img src="../assets/src/img/5.png" alt="">
+    </div>
+
+    <nav class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+
+    <p class="footer-copyright">Copyright© OpenUI All Rights Reserved.</p>
+  </footer>
+
+  <!-- ===== Menu Panel (WOMEN/MAN/KIDS) ===== -->
+  <div class="menu-panel" id="menuPanel">
+    <button class="panel-close" id="menuCloseBtn" aria-label="close menu">
+      <img src="../assets/src/img/Close.svg" alt="close" class="icon-img">
+    </button>
+
+    <nav class="menu-tabs">
+      <button class="menu-tab active" data-tab="women">WOMEN</button>
+      <button class="menu-tab" data-tab="man">MAN</button>
+      <button class="menu-tab" data-tab="kids">KIDS</button>
+    </nav>
+    <div class="menu-tabs-line">
+      <span class="menu-tabs-indicator" id="menuIndicator"></span>
+    </div>
+
+    <ul class="menu-list">
+      <li class="menu-item">
+        <span>New</span>
+        <img src="../assets/src/img/Forward.svg" alt="" class="menu-chevron">
+      </li>
+      <li class="menu-item">
+        <span>Apparel</span>
+        <img src="../assets/src/img/Forward.svg" alt="" class="menu-chevron">
+      </li>
+      <li class="menu-item">
+        <span>Bag</span>
+        <img src="../assets/src/img/Forward.svg" alt="" class="menu-chevron">
+      </li>
+      <li class="menu-item">
+        <span>Shoes</span>
+        <img src="../assets/src/img/Forward.svg" alt="" class="menu-chevron">
+      </li>
+      <li class="menu-item">
+        <span>Beauty</span>
+        <img src="../assets/src/img/Forward.svg" alt="" class="menu-chevron">
+      </li>
+      <li class="menu-item">
+        <span>Accessories</span>
+        <img src="../assets/src/img/Forward.svg" alt="" class="menu-chevron">
+      </li>
+    </ul>
+
+    <div class="menu-contact">
+      <a href="tel:+17867138616" class="menu-contact-row">
+        <img src="../assets/src/img/Call.svg" alt="" class="icon-img">
+        <span>(786) 713-8616</span>
+      </a>
+      <a href="#" class="menu-contact-row">
+        <img src="../assets/src/img/Location.svg" alt="" class="icon-img">
+        <span>Store locator</span>
+      </a>
+    </div>
+
+    <div class="menu-divider">
+      <span class="menu-divider-diamond"></span>
+    </div>
+
+    <div class="menu-sns">
+      <a href="#" aria-label="twitter"><img src="../assets/src/img/Twitter.svg" alt="twitter"></a>
+      <a href="#" aria-label="instagram"><img src="../assets/src/img/Instagram.svg" alt="instagram"></a>
+      <a href="#" aria-label="youtube"><img src="../assets/src/img/YouTube (1).svg" alt="youtube"></a>
+    </div>
+  </div>
+
+  <!-- ===== Search Panel ===== -->
+  <div class="search-panel" id="searchPanel">
+    <div class="search-input-row">
+      <img src="../assets/src/img/Search.svg" alt="" class="icon-img">
+      <input type="text" class="search-input" placeholder="Search items">
+      <button class="panel-close" id="searchCloseBtn" aria-label="close search">
+        <img src="../assets/src/img/Close.svg" alt="close" class="icon-img">
+      </button>
+    </div>
+
+    <p class="search-popular-label">Popular search terms</p>
+    <ul class="search-term-list">
+      <li>Trend</li>
+      <li>Dress</li>
+      <li>Bag</li>
+      <li>Tshirt</li>
+      <li>Beauty</li>
+      <li>Accessories</li>
+    </ul>
+  </div>
+
+  <script>
+    const menuOpenBtn = document.getElementById('menuOpenBtn');
+    const menuCloseBtn = document.getElementById('menuCloseBtn');
+    const menuPanel = document.getElementById('menuPanel');
+
+    const searchOpenBtn = document.getElementById('searchOpenBtn');
+    const searchCloseBtn = document.getElementById('searchCloseBtn');
+    const searchPanel = document.getElementById('searchPanel');
+
+    function openPanel(panel) {
+      panel.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closePanel(panel) {
+      panel.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    menuOpenBtn.addEventListener('click', () => openPanel(menuPanel));
+    menuCloseBtn.addEventListener('click', () => closePanel(menuPanel));
+
+    searchOpenBtn.addEventListener('click', () => openPanel(searchPanel));
+    searchCloseBtn.addEventListener('click', () => closePanel(searchPanel));
+
+    // 메뉴 패널 내 WOMEN / MAN / KIDS 탭 전환
+    const menuTabs = document.querySelectorAll('.menu-tab');
+    const menuIndicator = document.getElementById('menuIndicator');
+
+    function moveIndicator(tabEl) {
+      const tabsNav = tabEl.parentElement;
+      const navRect = tabsNav.getBoundingClientRect();
+      const tabRect = tabEl.getBoundingClientRect();
+      const center = tabRect.left - navRect.left + tabRect.width / 2;
+      menuIndicator.style.left = center + 'px';
+    }
+
+    menuTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        menuTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        moveIndicator(tab);
+      });
+    });
+
+    menuOpenBtn.addEventListener('click', () => {
+      requestAnimationFrame(() => {
+        const activeTab = document.querySelector('.menu-tab.active');
+        if (activeTab) moveIndicator(activeTab);
+      });
+    });
+
+    // 블로그 카테고리 탭 활성화
+    document.querySelectorAll('.blog-tabs .tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.blog-tabs .tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
